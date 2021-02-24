@@ -1990,7 +1990,7 @@
       },
       "Filter.Authorization/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
           "Microsoft.AspNetCore.Authorization": "5.0.3",
           "Microsoft.AspNetCore.Mvc.Abstractions": "2.2.0",
