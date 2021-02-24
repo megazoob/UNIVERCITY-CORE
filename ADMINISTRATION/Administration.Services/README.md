@@ -1,4 +1,4 @@
-# Administration.Servies #
+# Administration.Services #
 
 Бизнес слой сервиса управления административным корпусом.
 
