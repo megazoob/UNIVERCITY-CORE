@@ -8,5 +8,7 @@
 
 ```c#
    string connectionNews = Configuration.GetConnectionString("AdministrationConnection");
-   services.AddDbContext<DBContextSQLServer>(options => options.UseSqlServer(connectionNews, p => p.MigrationsAssembly("Administration.API")));
+   services.AddDbContext<DBContextSQLServer>(options => 
+                                         options.UseSqlServer(connectionNews, 
+                                         p => p.MigrationsAssembly("Administration.API")));
 ```
