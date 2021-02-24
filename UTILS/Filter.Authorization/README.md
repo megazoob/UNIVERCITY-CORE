@@ -1,8 +1,9 @@
 # Filter.Authorization #
 
-Библиотека с набором фильтров авторизации.
+Библиотека с набором фильтров авторизации. 
+Фильтрация через атрибуты.
 
-## [[AuthorizationWithRoles("Administrator,Employee,Student")]] ##
+## [AuthorizationWithRoles("Administrator,Employee,Student")] ##
 
 Проверка пользователя на наличие токена авторизации и на принадлежность к одной из указанных ролей.
 
