@@ -1,0 +1,17 @@
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\bin\Debug\net5.0\Administration.Services.deps.json
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\bin\Debug\net5.0\Administration.Services.dll
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\bin\Debug\net5.0\ref\Administration.Services.dll
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\bin\Debug\net5.0\Administration.Services.pdb
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\bin\Debug\net5.0\Administration.Services.xml
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\bin\Debug\net5.0\Administration.Data.dll
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\bin\Debug\net5.0\Administration.Data.pdb
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\bin\Debug\net5.0\Administration.Data.xml
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\obj\Debug\net5.0\Administration.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\obj\Debug\net5.0\Administration.Services.AssemblyInfoInputs.cache
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\obj\Debug\net5.0\Administration.Services.AssemblyInfo.cs
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\obj\Debug\net5.0\Administration.Services.csproj.CoreCompileInputs.cache
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\obj\Debug\net5.0\Administration.Services.csproj.CopyComplete
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\obj\Debug\net5.0\Administration.Services.dll
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\obj\Debug\net5.0\ref\Administration.Services.dll
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\obj\Debug\net5.0\Administration.Services.pdb
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Services\obj\Debug\net5.0\Administration.Services.csprojAssemblyReference.cache

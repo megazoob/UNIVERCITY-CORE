@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Administration.Services</name>
+    </assembly>
+    <members>
+        <member name="T:Administration.Services.Interfaces.IDepartmentsManagement">
+            <summary>
+            Создание, редактирование, отображение отделов.
+            </summary>
+        </member>
+        <member name="M:Administration.Services.Interfaces.IDepartmentsManagement.CreateDepartment(System.String,System.Int32,System.String)">
+            <summary>
+            Создание отдела.
+            </summary>
+            <param name="name"></param>
+            <param name="numberOfStaffUnits"></param>
+            <param name="parentId"></param>
+            <returns>string - successful или Error:  </returns>
+        </member>
+        <member name="M:Administration.Services.Interfaces.IDepartmentsManagement.UpdateDepartment(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Редактирование отдела.
+            </summary>
+            <param name="id"></param>
+            <param name="parentId"></param>
+            <param name="numberOfStaffUnits"></param>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Administration.Services.Interfaces.IDepartmentsManagement.ChangeAbolishDepartment(System.String,System.Boolean)">
+            <summary>
+            abolished = true = удаление.
+            </summary>
+            <param name="id"></param>
+            <param name="abolished"></param>
+            <returns>string - successful или Error:  </returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Administration.Services.Interfaces.IDepartmentsManagement.GetDepartmentsList(System.String)" -->
+        <member name="T:Administration.Services.Services.DepartmentsManagementSQLServer">
+            <summary>
+            Релизация IDepartmentsManagement для SQL Server.
+            </summary>
+        </member>
+        <member name="M:Administration.Services.Services.DepartmentsManagementSQLServer.#ctor(Administration.Data.DataContext.SQL_SERVER.DBContextSQLServer)">
+            <summary>Внедрение зависимости от контекста базы данных.</summary>
+            <param name="db"></param>
+        </member>
+        <member name="M:Administration.Services.Services.DepartmentsManagementSQLServer.ChangeAbolishDepartment(System.String,System.Boolean)">
+            <summary>
+            Удаление/восстановление отдела.
+            </summary>
+            <param name="id"></param>
+            <param name="abolished"></param>
+            <returns>string - successful или Error:  </returns>
+        </member>
+        <member name="M:Administration.Services.Services.DepartmentsManagementSQLServer.CreateDepartment(System.String,System.Int32,System.String)">
+            <summary>
+            Создание отдела.
+            </summary>
+            <param name="name"></param>
+            <param name="numberOfStaffUnits"></param>
+            <param name="parentId"></param>
+            <returns>string - successful или Error:  </returns>
+        </member>
+        <member name="M:Administration.Services.Services.DepartmentsManagementSQLServer.GetDepartmentsList(System.String)">
+            <summary>
+            Список всех отделов или подчиненных отделу с id == parentid
+            </summary>
+            <param name="parentId"></param>
+            <returns>IList Department</returns>
+        </member>
+        <member name="M:Administration.Services.Services.DepartmentsManagementSQLServer.UpdateDepartment(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Редактирование отдела.
+            </summary>
+            <param name="id"></param>
+            <param name="parentId"></param>
+            <param name="numberOfStaffUnits"></param>
+            <param name="name"></param>
+            <returns>string - successful или Error:  </returns>
+        </member>
+    </members>
+</doc>

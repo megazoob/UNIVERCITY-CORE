@@ -1,0 +1,16 @@
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\bin\Debug\net5.0\Administration.Data.deps.json
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\bin\Debug\net5.0\Administration.Data.runtimeconfig.json
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\bin\Debug\net5.0\Administration.Data.runtimeconfig.dev.json
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\bin\Debug\net5.0\Administration.Data.dll
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\bin\Debug\net5.0\ref\Administration.Data.dll
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\bin\Debug\net5.0\Administration.Data.pdb
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\bin\Debug\net5.0\Administration.Data.xml
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\obj\Debug\net5.0\Administration.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\obj\Debug\net5.0\Administration.Data.AssemblyInfoInputs.cache
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\obj\Debug\net5.0\Administration.Data.AssemblyInfo.cs
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\obj\Debug\net5.0\Administration.Data.csproj.CoreCompileInputs.cache
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\obj\Debug\net5.0\Administration.Data.dll
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\obj\Debug\net5.0\ref\Administration.Data.dll
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\obj\Debug\net5.0\Administration.Data.pdb
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\obj\Debug\net5.0\Administration.Data.genruntimeconfig.cache
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\ADMINISTRATION\Administration.Data\obj\Debug\net5.0\Administration.Data.csprojAssemblyReference.cache
