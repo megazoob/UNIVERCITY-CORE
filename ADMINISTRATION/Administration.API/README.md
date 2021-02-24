@@ -2,6 +2,6 @@
 
 Web Api сервиса управления административным корпусом.
 
-Dependencies: Administration.Data, Administration.Servies, Utils.Filter.Authorization.
+Dependencies: <i>Administration.Data, Administration.Servies, Utils.Filter.Authorization</i>.
 
-См. докумментацию Api в Swagger.
+См. докумментацию Api в <b>Swagger</b>.
