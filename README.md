@@ -78,7 +78,7 @@ Url адреса хаба или Web Api:
  Внедрение зависимостей:
  
  ```
- rlSettings configuration = new UrlSettings();
+UrlSettings configuration = new UrlSettings();
 Configuration.GetSection("UrlSettings").Bind(configuration);
 services.AddSingleton(configuration);
 //
