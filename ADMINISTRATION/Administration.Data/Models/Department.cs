@@ -10,7 +10,7 @@ namespace Administration.Data.Models
     public class Department
     {
         /// <summary></summary>
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Название.
@@ -50,7 +50,7 @@ namespace Administration.Data.Models
         /// Parent Id.
         /// </summary>
         [Display(Name = "Subordinate To")]
-        public string SubordinateToId { get; set; }
+        public int SubordinateToId { get; set; }
 
         /// <summary>
         /// Отделы в подчинении.

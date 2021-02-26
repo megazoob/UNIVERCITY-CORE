@@ -9,6 +9,7 @@ using Administration.Services.Interfaces;
 using Administration.Data.Models;
 using Microsoft.AspNetCore.Authorization;
 using Filter.Authorization;
+using Users.Roles;
 
 namespace Administration.API.Controllers.api
 {
@@ -25,7 +26,7 @@ namespace Administration.API.Controllers.api
         }
 
         [HttpGet("api/createdepartment")]
-        [AuthorizationWithRoles("Administrator")]
+        [AuthorizationWithRoles(Roles.Admin)]
         public async Task<string> CreateDepartment(string name, int numberOfStaffUnits, string parentId="")
         {
             return await _depManage.CreateDepartment(name, numberOfStaffUnits, parentId);
@@ -33,7 +34,7 @@ namespace Administration.API.Controllers.api
 
 
         [HttpGet("api/updatedepartment")]
-        [AuthorizationWithRoles("Administrator")]
+        [AuthorizationWithRoles(Roles.Admin)]
         public async Task<string> UpdateDepartment(string id, string parentId, int numberOfStaffUnits, string name)
         {
             return await _depManage.UpdateDepartment(id, parentId, numberOfStaffUnits, name);
@@ -41,7 +42,7 @@ namespace Administration.API.Controllers.api
 
 
         [HttpGet("api/changeabolisheddepartment")]
-        [AuthorizationWithRoles("Administrator")]
+        [AuthorizationWithRoles(Roles.Admin)]
         public async Task<string> ChangeAbolishDepartment(string id, Boolean abolished)
         {
             return await _depManage.ChangeAbolishDepartment(id, abolished);

@@ -2,7 +2,6 @@ C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\bin\Deb
 C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\bin\Debug\net5.0\Filter.Authorization.dll
 C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\bin\Debug\net5.0\ref\Filter.Authorization.dll
 C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\bin\Debug\net5.0\Filter.Authorization.pdb
-C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\obj\Debug\net5.0\Filter.Authorization.csprojAssemblyReference.cache
 C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\obj\Debug\net5.0\Filter.Authorization.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\obj\Debug\net5.0\Filter.Authorization.AssemblyInfoInputs.cache
 C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\obj\Debug\net5.0\Filter.Authorization.AssemblyInfo.cs
@@ -10,3 +9,8 @@ C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\obj\Deb
 C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\obj\Debug\net5.0\Filter.Authorization.dll
 C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\obj\Debug\net5.0\ref\Filter.Authorization.dll
 C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\obj\Debug\net5.0\Filter.Authorization.pdb
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\obj\Debug\net5.0\Filter.Authorization.csprojAssemblyReference.cache
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\bin\Debug\net5.0\Authorization.Gateway.Services.dll
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\bin\Debug\net5.0\Authorization.Gateway.Services.pdb
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\bin\Debug\net5.0\Authorization.Gateway.Services.xml
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Filter.Authorization\obj\Debug\net5.0\Filter.Authorization.csproj.CopyComplete

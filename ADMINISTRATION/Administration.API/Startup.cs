@@ -19,6 +19,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Reflection;
 using System.IO;
 using Microsoft.AspNetCore.Authorization;
+using Filter.AuthOperation;
+using Authorization.Gateway.Services.Models;
+using Authorization.Gateway.Services.Inerfaces;
+using Authorization.Gateway.Services.Services;
+
 
 namespace Administration.API
 {
@@ -34,8 +39,14 @@ namespace Administration.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+           
 
-            services.AddControllers();
+            //Если не добавить опцию игнорирования рекурсии, то дерево отделов не сможет быть
+            //сериализовано в методе WebApi. И вместо дерева Json будет ошибка.
+            //Подробно здесь: https://www.thecodebuzz.com/jsonexception-possible-object-cycle-detected-object-depth/
+            services.AddControllers().AddNewtonsoftJson(options =>
+                     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
@@ -50,7 +61,6 @@ namespace Administration.API
                         Url = new Uri("https://megazoob.com"),
                     }
                 });
-
 
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
@@ -77,6 +87,9 @@ namespace Administration.API
                     {securityScheme, new string[] { }}
                 });
 
+                //////Add Operation Specific Authorization///////применяет фильтр только к API с атрибутом Auhtorize...
+                c.OperationFilter<AuthOperationFilter>();
+                //end bearer
             });
 
             //регистрация контекста базы данных.
@@ -84,6 +97,22 @@ namespace Administration.API
             services.AddDbContext<DBContextSQLServer>(options => options.UseSqlServer(connectionNews, p => p.MigrationsAssembly("Administration.API")));
             //регистрация сервиса управления отделами.
             services.AddScoped<IDepartmentsManagement, DepartmentsManagementSQLServer>();
+
+            //авторизация
+            //-------------настройки Url из appsettings.json скопом---------------------------------
+            UrlSettings configuration = new UrlSettings();
+            Configuration.GetSection("UrlSettings").Bind(configuration);
+            services.AddSingleton(configuration);
+            //--------------------------------------------------------------------------------------
+            if (Configuration["UseSignalR"].ToLower().Equals("true"))
+            {
+                services.AddSingleton<IAuthorizationGateway, AuthorizationGatewaySignalR>(); //signalR. 
+            } else
+            {
+                services.AddSingleton<IAuthorizationGateway, AuthorizationGatewayHttp>(); //Web Api.
+            }
+            //
+
 
             if (Configuration["ApplyMigration"].ToLower().Equals("true"))
             {

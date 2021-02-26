@@ -1,0 +1,463 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Api\\Authorization.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Api\\Authorization.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Api\\Authorization.Api.csproj",
+        "projectName": "Authorization.Api",
+        "projectPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Api\\Authorization.Api.csproj",
+        "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Data\\Authorization.Data.csproj": {
+                "projectPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Data\\Authorization.Data.csproj"
+              },
+              "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Services\\Authorization.Services.csproj": {
+                "projectPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Services\\Authorization.Services.csproj"
+              },
+              "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Filter.AuthOperation\\Filter.AuthOperation.csproj": {
+                "projectPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Filter.AuthOperation\\Filter.AuthOperation.csproj"
+              },
+              "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Localization.Services\\Localization.Services.csproj": {
+                "projectPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Localization.Services\\Localization.Services.csproj"
+              },
+              "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Users.Roles\\Users.Roles.csproj": {
+                "projectPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Users.Roles\\Users.Roles.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Data\\Authorization.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Data\\Authorization.Data.csproj",
+        "projectName": "Authorization.Data",
+        "projectPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Data\\Authorization.Data.csproj",
+        "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Services\\Authorization.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Services\\Authorization.Services.csproj",
+        "projectName": "Authorization.Services",
+        "projectPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Services\\Authorization.Services.csproj",
+        "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Data\\Authorization.Data.csproj": {
+                "projectPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\AUTHORIZATION\\Authorization.Data\\Authorization.Data.csproj"
+              },
+              "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Users.Roles\\Users.Roles.csproj": {
+                "projectPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Users.Roles\\Users.Roles.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Localization.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Filter.AuthOperation\\Filter.AuthOperation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Filter.AuthOperation\\Filter.AuthOperation.csproj",
+        "projectName": "Filter.AuthOperation",
+        "projectPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Filter.AuthOperation\\Filter.AuthOperation.csproj",
+        "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Filter.AuthOperation\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Localization.Services\\Localization.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Localization.Services\\Localization.Services.csproj",
+        "projectName": "Localization.Services",
+        "projectPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Localization.Services\\Localization.Services.csproj",
+        "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Localization.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Localization.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Users.Roles\\Users.Roles.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Users.Roles\\Users.Roles.csproj",
+        "projectName": "Users.Roles",
+        "projectPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Users.Roles\\Users.Roles.csproj",
+        "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Users.Roles\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

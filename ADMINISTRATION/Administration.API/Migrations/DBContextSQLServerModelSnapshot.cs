@@ -21,8 +21,10 @@ namespace Administration.API.Migrations
 
             modelBuilder.Entity("Administration.Data.Models.Department", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<bool>("Abolished")
                         .HasColumnType("bit");
@@ -39,8 +41,8 @@ namespace Administration.API.Migrations
                     b.Property<int>("NumberOfStaffUnits")
                         .HasColumnType("int");
 
-                    b.Property<string>("SubordinateToId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("SubordinateToId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

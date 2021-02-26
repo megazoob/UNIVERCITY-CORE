@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Authorization.Services</name>
+    </assembly>
+    <members>
+        <member name="T:Authorization.Services.Interfaces.ITokenValidation">
+            <summary>
+            Интерфейс проверок токена.
+            </summary>
+        </member>
+        <member name="M:Authorization.Services.Interfaces.ITokenValidation.IsUserInRole(System.String,System.String)">
+            <summary>
+            Проверка - присутствует ли роль у пользователя.
+            </summary>
+            <param name="token"></param>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Services.Interfaces.ITokenValidation.IsUserAuthorized(System.String)">
+            <summary>
+            Проверка - авторизован ли пользователь.
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Authorization.Services.Interfaces.IUserInfo">
+            <summary>
+            Получение информации о пользователе
+            </summary>
+            <returns>
+            UserInfoResponse
+            </returns>
+        </member>
+        <member name="M:Authorization.Services.Interfaces.IUserInfo.GetUserInfo(Authorization.Services.Models.ViewModels.UserInfoResponse,System.String)">
+            <summary>
+            Возвращает информацию о пользовтеле.
+            </summary>
+            <param name="model" type="UserInfoResponse"></param>
+            <param name="email"></param>
+            <returns>
+            UserInfoResponse
+            </returns>
+        </member>
+        <member name="M:Authorization.Services.Interfaces.IUserProfileManage.GetUsersList">
+            <summary>
+            Список пользователей.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Services.Interfaces.IUserProfileManage.GetUserProfile(System.String)">
+            <summary>
+            Профиль на редактирование.
+            </summary>
+            <param name="identificator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Services.Interfaces.IUserProfileManage.SaveOrCreateUserProfile(Authorization.Services.Models.ViewModels.UserProfileEditView)">
+            <summary>
+            Создает или сохраняет измененный профиль пользователя.
+            </summary>
+            <param name="model"></param>
+            <param name="currentUserSid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Services.Interfaces.IUserProfileManage.UpdateUserPassword(Authorization.Services.Models.ViewModels.UserPassword)">
+            <summary>
+            Изменяет пароль пользователя.
+            </summary>
+            <param name="userPassword"></param>
+            <param name="currentUserId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Authorization.Services.Interfaces.IUserRoleManage">
+            <summary>
+            Управление ролями пользователя.
+            </summary>
+        </member>
+        <member name="M:Authorization.Services.Interfaces.IUserRoleManage.AddRoleToUser(System.String,System.String)">
+            <summary>
+            В случае успеха возвращает "true".
+            </summary>
+            <param name="identificator"></param>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Services.Interfaces.IUserRoleManage.RemoveRoleFromUser(System.String,System.String)">
+            <summary>
+            В случае успеха возвращает "true".
+            </summary>
+            <param name="identificator"></param>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Services.Interfaces.IUserRoleManage.UpdateUserStatus(System.String,System.Boolean)">
+            <summary>
+            В случае успеха возвращает "true".
+            </summary>
+            <param name="identificator"></param>
+            <param name="restore"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Authorization.Services.Models.ViewModels.UserInfoResponse">
+            <summary>
+            Модель информации о пользователе
+            </summary>
+        </member>
+        <member name="M:Authorization.Services.Services.ClaimsSync.GetSyncedClaims(Authorization.Data.Models.User,Microsoft.AspNetCore.Identity.UserManager{Authorization.Data.Models.User},System.String)">
+            <summary>
+            Создает унифицрованный список клеймов
+            </summary>
+            <param name="user" type = "User"></param>
+            <param name="userManager" type = "UserManager User"></param>
+            <param name="sid"></param>
+            <returns>
+            Список клеймов
+            </returns>
+        </member>
+        <member name="M:Authorization.Services.Services.TokenValidation.IsUserAuthorized(System.String)">
+            <summary>
+            Авторизован ли пользователь.
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Services.Services.TokenValidation.IsUserInRole(System.String,System.String)">
+            <summary>
+            Разбираем токен по частям).
+            Присутствует ли роль у пользователя.
+            </summary>
+            <param name="token"></param>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Authorization.Services.Services.UserInfo">
+            <summary>
+            Получение информации о пользователе
+            </summary>
+            <returns>
+            UserInfoResponse
+            </returns>
+        </member>
+        <member name="M:Authorization.Services.Services.UserInfo.GetUserInfo(Authorization.Services.Models.ViewModels.UserInfoResponse,System.String)">
+            <summary>
+            Возвращает информацию о пользовтеле.
+            </summary>
+            <param name="model" type="UserInfoResponse"></param>
+            <param name="email"></param>
+            <returns>
+            UserInfoResponse
+            </returns>
+        </member>
+        <member name="M:Authorization.Services.Services.UserProfileManage.GetUserProfile(System.String)">
+            <summary>
+            Профиль пользователя.
+            </summary>
+            <param name="identificator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Services.Services.UserProfileManage.GetUsersList">
+            <summary>
+            Список пользователей.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Services.Services.UserProfileManage.SaveOrCreateUserProfile(Authorization.Services.Models.ViewModels.UserProfileEditView)">
+            <summary>
+            Создает или изменяет профиль пользователя.
+            </summary>
+            <param name="model"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Services.Services.UserProfileManage.UpdateUserPassword(Authorization.Services.Models.ViewModels.UserPassword)">
+            <summary>
+            Изменяет пароль пользователя.
+            </summary>
+            <param name="userPassword"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Services.Services.UserRoleManage.AddRoleToUser(System.String,System.String)">
+            <summary>
+            Если все нормально, возвращает "true".
+            </summary>
+            <param name="identificator"></param>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Services.Services.UserRoleManage.RemoveRoleFromUser(System.String,System.String)">
+            <summary>
+            В случае успеха возвращает "true".
+            </summary>
+            <param name="identificator"></param>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Services.Services.UserRoleManage.UpdateUserStatus(System.String,System.Boolean)">
+            <summary>
+            В случае успеха возвращает "true".
+            </summary>
+            <param name="identificator"></param>
+            <param name="restore"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

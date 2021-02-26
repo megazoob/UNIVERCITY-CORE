@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Localization.Services</name>
+    </assembly>
+    <members>
+        <member name="T:Localization.Services.EFStringLocalizer">
+            <summary>
+            Пока все заглушено.
+            Просто возвращается ключ  и все.
+            </summary>
+        </member>
+        <member name="T:Localization.Services.Services.EFStringLocalizerFactory">
+            <summary>
+            Посто заглушка без обращения к БД.
+            </summary>
+        </member>
+    </members>
+</doc>

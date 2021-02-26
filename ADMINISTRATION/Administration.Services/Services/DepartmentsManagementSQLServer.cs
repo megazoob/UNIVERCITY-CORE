@@ -15,13 +15,16 @@ namespace Administration.Services.Services
     /// </summary>
     public class DepartmentsManagementSQLServer : IDepartmentsManagement
     {
-        DBContextSQLServer _db;
+        private readonly DBContextSQLServer _db;
+        private readonly int _minId;
 
         /// <summary>Внедрение зависимости от контекста базы данных.</summary>
         /// <param name="db"></param>
         public DepartmentsManagementSQLServer(DBContextSQLServer db)
         {
             _db = db;
+
+            _minId = _db.Departments.Min(p => p.Id);
         }
 
         /// <summary>
@@ -69,20 +72,36 @@ namespace Administration.Services.Services
                 numberOfStaffUnits = 1;
             }
 
-            Department newdep = new Department
+            Department newdep = new Department();
+            newdep.Abolished = false;
+            newdep.CreatedDate = DateTime.Now;
+            newdep.Name = name;
+            newdep.NumberOfStaffUnits = numberOfStaffUnits;
+
+            int pid = 0;
+            if (!string.IsNullOrEmpty(parentId))
             {
-                Abolished = false,
-                CreatedDate = DateTime.Now,
-                Name = name,
-                NumberOfStaffUnits = numberOfStaffUnits,
-                SubordinateToId = parentId
-            };
+                try
+                {
+                    pid = Int32.Parse(parentId);
+                } catch (Exception e)
+                {
+                    pid = 0;
+                }
+            }
+            if (pid==0)
+            {
+                pid = _minId;
+            }
+
+            newdep.SubordinateToId = pid;
 
             try
             {
-               await _db.Departments.AddAsync(newdep);
+                await _db.Departments.AddAsync(newdep);
                await _db.SaveChangesAsync();
-            } catch (Exception e)
+            }
+            catch (Exception e)
             {
                 result = "Error: " + e.Message;
             }
@@ -97,10 +116,26 @@ namespace Administration.Services.Services
         /// <returns>IList Department</returns>
         public async Task<IList<Department>> GetDepartmentsList(string parentId = "")
         {
+            int pid = 0;
+            if (!string.IsNullOrEmpty(parentId))
+            {
+                try
+                {
+                    pid = Int32.Parse(parentId);
+                }
+                catch (Exception e)
+                {
+                    pid = 0;
+                }
+            }
+
+            if (pid==0)
+            {
+                pid = _minId;
+            }
 
             return await _db.Departments.Include(e => e.ManagesDepartments)
-                         .Where(p => string.IsNullOrEmpty(p.SubordinateToId).Equals(parentId))
-                         .Where(p => p.Abolished == false).ToListAsync<Department>();
+                         .Where(p => p.SubordinateToId == pid && p.Abolished == false).ToListAsync<Department>();
 
             
         }
@@ -128,8 +163,29 @@ namespace Administration.Services.Services
             {
                 item.NumberOfStaffUnits = numberOfStaffUnits;
                 item.Name = name;
-                item.SubordinateToId = parentId;
 
+                int pid = 0;
+                if (!string.IsNullOrEmpty(parentId))
+                {
+                    try
+                    {
+                        pid = Int32.Parse(parentId);
+                    }
+                    catch (Exception e)
+                    {
+                        pid = 0;
+                    }
+                }
+
+                if (pid==0)
+                {
+                    pid = _minId;
+                }
+
+                item.SubordinateToId = pid;
+              
+
+                
                 try
                 {
 

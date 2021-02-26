@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "v9Jr0AONY/SrBKBCYChr783VlNgVGR2rf7Krebya6ZEbXt8toQiFGnd31bQ65FjXuOyxP40r6+/Z2PFVlcIqkw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Filter.AuthOperation\\Filter.AuthOperation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Andrew\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.0.7\\swashbuckle.aspnetcore.swagger.6.0.7.nupkg.sha512",
+    "C:\\Users\\Andrew\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.0.7\\swashbuckle.aspnetcore.swaggergen.6.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

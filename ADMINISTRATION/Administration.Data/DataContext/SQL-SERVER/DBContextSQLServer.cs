@@ -19,11 +19,11 @@ namespace Administration.Data.DataContext.SQL_SERVER
         /// <param name="options"></param>
         public DBContextSQLServer(DbContextOptions<DBContextSQLServer> options) : base(options)
         {
-           // Database.EnsureCreated();
+          //Database.EnsureCreated();
         }
 
         /// <summary></summary>
-        /// <param name="modelBuilder"></param>
+        //// <param name = "modelBuilder" ></ param >
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Department>(entity =>
@@ -36,10 +36,10 @@ namespace Administration.Data.DataContext.SQL_SERVER
                     .IsRequired(false)
                     .OnDelete(DeleteBehavior.Restrict);
             });
-        
+
         }
 
-        
+
 
     }
 }

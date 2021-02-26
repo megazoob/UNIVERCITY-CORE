@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Administration.API", "Administration.API.csproj", "{B3968E7A-A75A-4109-B034-83FE12067725}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Administration.API", "Administration.API.csproj", "{B3968E7A-A75A-4109-B034-83FE12067725}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Administration.Services", "..\Administration.Services\Administration.Services.csproj", "{B3CA28D8-0B82-4D5A-9185-09F5ADF7B868}"
 EndProject
@@ -12,6 +12,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Filters", "Filters", "{94BCAA18-814A-4A66-B91E-D78F1F6DB80A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Filter.Authorization", "..\..\UTILS\Filter.Authorization\Filter.Authorization.csproj", "{0502E837-0E6D-4FEF-AAC1-911086F7CC9D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Users.Roles", "..\..\UTILS\Users.Roles\Users.Roles.csproj", "{C80746DB-18A2-4C69-A3B7-2EDED923A5F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authorization", "Authorization", "{29904886-67F2-4D68-84D7-2C875E0B575F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authorization.Gateway.Services", "..\..\UTILS\Authorization.Gateway.Services\Authorization.Gateway.Services.csproj", "{625C38C7-F85E-4408-AF69-826D1CD61139}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Filter.AuthOperation", "..\..\UTILS\Filter.AuthOperation\Filter.AuthOperation.csproj", "{0BB04CA2-3288-45ED-B2E9-353C86706534}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,12 +43,27 @@ Global
 		{0502E837-0E6D-4FEF-AAC1-911086F7CC9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0502E837-0E6D-4FEF-AAC1-911086F7CC9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0502E837-0E6D-4FEF-AAC1-911086F7CC9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C80746DB-18A2-4C69-A3B7-2EDED923A5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C80746DB-18A2-4C69-A3B7-2EDED923A5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C80746DB-18A2-4C69-A3B7-2EDED923A5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C80746DB-18A2-4C69-A3B7-2EDED923A5F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{625C38C7-F85E-4408-AF69-826D1CD61139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{625C38C7-F85E-4408-AF69-826D1CD61139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{625C38C7-F85E-4408-AF69-826D1CD61139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{625C38C7-F85E-4408-AF69-826D1CD61139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BB04CA2-3288-45ED-B2E9-353C86706534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BB04CA2-3288-45ED-B2E9-353C86706534}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BB04CA2-3288-45ED-B2E9-353C86706534}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BB04CA2-3288-45ED-B2E9-353C86706534}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{94BCAA18-814A-4A66-B91E-D78F1F6DB80A} = {29904886-67F2-4D68-84D7-2C875E0B575F}
 		{0502E837-0E6D-4FEF-AAC1-911086F7CC9D} = {94BCAA18-814A-4A66-B91E-D78F1F6DB80A}
+		{625C38C7-F85E-4408-AF69-826D1CD61139} = {29904886-67F2-4D68-84D7-2C875E0B575F}
+		{0BB04CA2-3288-45ED-B2E9-353C86706534} = {94BCAA18-814A-4A66-B91E-D78F1F6DB80A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1AE9E439-9E37-4E6D-8360-5D8CF7EEC1F2}

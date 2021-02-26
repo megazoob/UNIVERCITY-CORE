@@ -10,17 +10,21 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.7" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\UTILS\Authorization.Gateway.Services\Authorization.Gateway.Services.csproj" />
+    <ProjectReference Include="..\..\UTILS\Filter.AuthOperation\Filter.AuthOperation.csproj" />
     <ProjectReference Include="..\..\UTILS\Filter.Authorization\Filter.Authorization.csproj" />
+    <ProjectReference Include="..\..\UTILS\Users.Roles\Users.Roles.csproj" />
     <ProjectReference Include="..\Administration.Data\Administration.Data.csproj" />
     <ProjectReference Include="..\Administration.Services\Administration.Services.csproj" />
   </ItemGroup>

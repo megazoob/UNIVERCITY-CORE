@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/6GFj59Wry00xUogR37RV067RWlj4I1EjzKMfNKUK3C0ML7TX+UpjXVHVC28oMPlfioz/JatT5k7Y0xODXieWw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Andrew\\Documents\\JOB\\UNIVERCITY-CORE\\UTILS\\Localization.Services\\Localization.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Andrew\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\5.0.3\\microsoft.extensions.localization.abstractions.5.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

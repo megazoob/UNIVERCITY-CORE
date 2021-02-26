@@ -1,6 +1,7 @@
 using Administration.Data.DataContext.SQL_SERVER;
 using Administration.Data.Models;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.Extensions.Configuration;
@@ -45,8 +46,19 @@ namespace Administration.API
             }
             if (!exists)
             {
-                db.Database.GetInfrastructure().GetService<IMigrator>().Migrate("Administration.API");
+                db.Database.GetInfrastructure().GetService<IMigrator>().Migrate("Administration");
+
+                try
+                {
+                    db.Database.ExecuteSqlRaw("insert into Departments (Name, NumberOfStaffUnits, Abolished, CreatedDate, AbolishedDate) values ('-',1, 0, GETDATE(), '20000101')");
+                } catch (Exception e)
+                {
+
+                }
             }
+
+            
+
             db.Dispose();
 
         }

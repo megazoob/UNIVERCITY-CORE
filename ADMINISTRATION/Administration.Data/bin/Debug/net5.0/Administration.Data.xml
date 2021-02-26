@@ -15,7 +15,6 @@
         </member>
         <member name="M:Administration.Data.DataContext.SQL_SERVER.DBContextSQLServer.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <summary></summary>
-            <param name="modelBuilder"></param>
         </member>
         <member name="T:Administration.Data.Models.Department">
             <summary>

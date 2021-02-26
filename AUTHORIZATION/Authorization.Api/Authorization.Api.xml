@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Authorization.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Authorization.Api.Controllers.api.AccountManageController">
+            <summary>
+            Операции с аккаунтом пользователя:
+            Логин, регистрация, редактирование пароля, смена ролей, списки, информация.
+            </summary>
+        </member>
+        <member name="M:Authorization.Api.Controllers.api.AccountManageController.Login(Authorization.Services.Models.ViewModels.LoginViewModel,System.String)">
+            <summary>
+            Авторизация. Обязательно передать логи и пароль. Вторым параметром (culture) передать значение нужной локализации  (варианты значения: ru, en, de)
+            </summary>
+            <param name="model"></param>
+            <param name="culture"></param>
+            <remarks>
+            Возвращает токен безопасности в поле Token или ошибку в поле Error
+            или массив Errors в RequestBody
+            </remarks>
+        </member>
+        <member name="M:Authorization.Api.Controllers.api.AccountManageController.RefreshToken(System.String)">
+            <summary>
+            Пересоздание токена. В заголовке Authorization вместо обычного токена передаем RefreshToken.
+            </summary>
+            <remarks>
+            Возвращает новый токен безопасности в виде строки.
+            </remarks>
+        </member>
+        <member name="M:Authorization.Api.Controllers.api.AccountManageController.Register(Authorization.Services.Models.ViewModels.RegisterViewModel,System.String)">
+            <summary>
+            Функция регистрации пользователя. Параметром (culture) передать значение нужной локализации  (варианты значения: ru, en, de).
+            </summary>
+            <param name="model"></param>
+            <param name="culture"></param>
+            <remarks>
+            В случае ошибки возвращает ее описание в поле Error
+            или массив Errors в RequestBody.
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Api.Controllers.api.AccountManageController.RegisterWithRole(Authorization.Services.Models.ViewModels.RegisterViewModel,System.String,System.String)">
+            <summary>
+            Функция регистрации пользователя. Параметром (culture) передать значение нужной локализации  (варианты значения: ru, en, de).
+            Параметром role передать роль, в которую должен входить пользователь.
+            Доступно только админам.
+            </summary>
+            <param name="model"></param>
+            <param name="role"></param>
+            <param name="culture"></param>
+            <remarks>
+            В случае ошибки возвращает ее описание в поле Error
+            или массив Errors в RequestBody.
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Api.Controllers.api.AccountManageController.AddRoleToUser(System.String,System.String,System.String)">
+            <summary>
+            Добавляем пользователю роль. Параметром (culture) передать значение нужной локализации  (варианты значения: ru, en, de).
+            </summary>
+            <param name="identificator"></param>
+            <param name="role"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Api.Controllers.api.AccountManageController.RemoveRoleFromUser(System.String,System.String,System.String)">
+            <summary>
+            Исключаем пользователя из роли. Параметром (culture) передать значение нужной локализации  (варианты значения: ru, en, de).
+            </summary>
+            <param name="identificator"></param>
+            <param name="role"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Api.Controllers.api.AccountManageController.SetUserStatus(System.String,System.Boolean)">
+            <summary>
+            Активирует (restore = true) или деактивирует пользователя (restore = false)
+            </summary>
+            <param name="identificator"></param>
+            <param name="restore"></param>
+            <returns>True.toString() or Description of error</returns>
+        </member>
+        <member name="M:Authorization.Api.Controllers.api.AccountManageController.GetUsersList(System.String)">
+            <summary>
+            Cписок пользователей.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Api.Controllers.api.AccountManageController.UpdateUserPassword(Authorization.Services.Models.ViewModels.UserPassword)">
+            <summary>
+            Изменение пароля.
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Authorization.Api.Controllers.api.MedleyController">
+            <summary>
+            Разное:
+            список пользовательских ролей.
+            </summary>
+        </member>
+        <member name="M:Authorization.Api.Controllers.api.MedleyController.GetRoles">
+            <summary>
+            Просто список строк - ролей пользователей.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Authorization.Api.Controllers.api.ProfileManageController">
+            <summary>
+            Управление профилем пользовтеля:
+            редактирование, просмотр.
+            </summary>
+        </member>
+        <member name="M:Authorization.Api.Controllers.api.ProfileManageController.GetUserProfile(System.String)">
+            <summary>
+            Профиль пользователея на редактирование
+            </summary>
+            <param name="identificator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Api.Controllers.api.ProfileManageController.CreateOrUpdateUserProfile(Authorization.Services.Models.ViewModels.UserProfileEditView,System.String)">
+            <summary>
+            Создание или изменение профиля пользовтаеля
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Authorization.Api.Controllers.api.TokenValidationController">
+            <summary>
+            Авторизация сервисов по токену.
+            </summary>
+        </member>
+        <member name="M:Authorization.Api.Controllers.api.TokenValidationController.IsUserInRole(System.String,System.String)">
+            <summary>
+            Проверка - в роли ли пользователь.
+            Пользователь определяется по токену авторизации.
+            </summary>
+            <param name="role"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Api.Controllers.api.TokenValidationController.IsUserAuthorized(System.String)">
+            <summary>
+            Проверка - авторизован ли пользователь.
+            </summary>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Authorization.Api.Hubs.SignalR.TokenValidationSignalRHub">
+            <summary>
+            Авторизация из внешних сервисов. 
+            Аналог TokenValidationController.
+            </summary>
+        </member>
+        <member name="M:Authorization.Api.Hubs.SignalR.TokenValidationSignalRHub.#ctor(Authorization.Services.Interfaces.ITokenValidation)">
+            <summary>
+            
+            </summary>
+            <param name="tokenValidation"></param>
+        </member>
+        <member name="M:Authorization.Api.Hubs.SignalR.TokenValidationSignalRHub.IsUserInRole(System.String,System.String,System.String)">
+            <summary>
+            Проверка является ли пользователь с token членом группы role.
+            </summary>
+            <param name="token"></param>
+            <param name="role"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Authorization.Api.Hubs.SignalR.TokenValidationSignalRHub.IsUserAuthorized(System.String,System.String)">
+            <summary>
+            Проверка, является ли пользователь из token членом какой-либо группы.
+            </summary>
+            <param name="token"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Authorization.Api.Middlewares.AuthMiddleware">
+            <summary>
+            Проверка, валиден ли пользователь и так же не удален ли он из группы администраторов.
+            Включение middleware в контейнер :  app.UseMiddleware AuthMiddleware()".
+            Включать только строго после авторизации, так как проверка производится только при наличии
+            хидера Authorization.
+            </summary>
+        </member>
+        <member name="T:Authorization.Api.Models.UserInfoRequest">
+            <summary>
+            Модель для запроса информации о пользователе
+            </summary>
+        </member>
+    </members>
+</doc>

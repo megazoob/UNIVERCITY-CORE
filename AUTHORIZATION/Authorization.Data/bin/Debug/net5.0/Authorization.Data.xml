@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Authorization.Data</name>
+    </assembly>
+    <members>
+        <member name="T:Authorization.Data.Models.User">
+            <summary>
+            Расширение Identity User.
+            </summary>
+            <remarks>
+            Добавлено свойство DateOfBirn
+            </remarks>
+        </member>
+        <member name="P:Authorization.Data.Models.User.RefreshToken">
+            <summary>
+            токен восстановления.
+            </summary>
+        </member>
+        <member name="M:Authorization.Data.Models.User.CheckUserValid">
+            <summary>
+            Проверка, активен ли пользователь
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Authorization.Data.Models.UserProfile">
+            <summary>
+            Профиль пользователя.
+            </summary>
+        </member>
+    </members>
+</doc>
