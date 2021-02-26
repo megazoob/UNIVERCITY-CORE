@@ -97,7 +97,13 @@ if (Configuration["UseSignalR"].ToLower().Equals("true"))
 c.OperationFilter<AuthOperationFilter>();
 ```
 
-Далее в контроллерах применяем атрибуты "[AuthorizationWithRoles(string role)]" или "[IsAuthorized]".
+Далее в контроллерах применяем атрибуты "[AuthorizationWithRoles(string role)]" или "[IsAuthorized]":
+
+```
+[HttpGet("api/getdepartmentslist")]
+[IsAuthorized]
+public async Task<IList<Department>> GetDepartmentsList()
+ ```
 
 
 ## ADMINISTRATION ##
