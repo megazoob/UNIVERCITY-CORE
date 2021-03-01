@@ -10,3 +10,4 @@ C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Users.Roles\obj\Debug\net5.0
 C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Users.Roles\obj\Debug\net5.0\Users.Roles.dll
 C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Users.Roles\obj\Debug\net5.0\ref\Users.Roles.dll
 C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Users.Roles\obj\Debug\net5.0\Users.Roles.pdb
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Users.Roles\obj\Debug\net5.0\Users.Roles.csprojAssemblyReference.cache

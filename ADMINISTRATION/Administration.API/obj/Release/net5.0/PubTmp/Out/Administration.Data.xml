@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Administration.Data</name>
+    </assembly>
+    <members>
+        <member name="P:Administration.Data.DataContext.SQL_SERVER.DBContextSQLServer.Departments">
+            <summary>
+            Отделы.
+            </summary>
+        </member>
+        <member name="M:Administration.Data.DataContext.SQL_SERVER.DBContextSQLServer.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{Administration.Data.DataContext.SQL_SERVER.DBContextSQLServer})">
+            <summary></summary>
+            <param name="options"></param>
+        </member>
+        <member name="M:Administration.Data.DataContext.SQL_SERVER.DBContextSQLServer.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary></summary>
+        </member>
+        <member name="T:Administration.Data.Models.Department">
+            <summary>
+            Отдел.
+            </summary>
+        </member>
+        <member name="P:Administration.Data.Models.Department.Id">
+            <summary></summary>
+        </member>
+        <member name="P:Administration.Data.Models.Department.Name">
+            <summary>
+            Название.
+            </summary>
+        </member>
+        <member name="P:Administration.Data.Models.Department.NumberOfStaffUnits">
+            <summary>
+            Количество штатых единиц.
+            </summary>
+        </member>
+        <member name="P:Administration.Data.Models.Department.CreatedDate">
+            <summary>
+            Когда создан.
+            </summary>
+        </member>
+        <member name="P:Administration.Data.Models.Department.Abolished">
+            <summary>
+            Упразднен.
+            </summary>
+        </member>
+        <member name="P:Administration.Data.Models.Department.AbolishedDate">
+            <summary>
+            Когда упразднен.
+            </summary>
+        </member>
+        <member name="P:Administration.Data.Models.Department.SubordinateTo">
+            <summary></summary>
+        </member>
+        <member name="P:Administration.Data.Models.Department.SubordinateToId">
+            <summary>
+            Parent Id.
+            </summary>
+        </member>
+        <member name="P:Administration.Data.Models.Department.ManagesDepartments">
+            <summary>
+            Отделы в подчинении.
+            </summary>
+        </member>
+        <member name="M:Administration.Data.Models.Department.#ctor">
+            <summary>/// </summary>
+        </member>
+    </members>
+</doc>

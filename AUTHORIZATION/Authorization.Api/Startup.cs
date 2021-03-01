@@ -3,6 +3,7 @@ using Authorization.Api.Middlewares;
 using Authorization.Data.DataContext.SQLServer;
 using Authorization.Data.Models;
 using Authorization.Services.Interfaces;
+using Authorization.Services.Models;
 using Authorization.Services.Services;
 using Filter.AuthOperation;
 using Localization.Services;
@@ -50,6 +51,39 @@ namespace Authorization.Api
 
             services.AddCors();
 
+            //настройки токенов
+            JWTSettings jwtConfig = new JWTSettings();
+            Configuration.GetSection("JWTSettings").Bind(jwtConfig);
+            services.AddSingleton(jwtConfig);
+            //
+
+            //----------------------JWT-------------------------------------------------------------------------------------------------------------------------------------
+            services.AddScoped<IJwtGenerator, JwtGenerator>();
+            var tk = jwtConfig.TokenKey; //Configuration.GetValue(typeof(string), "TokenKey");
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tk.ToString().ToCharArray()));
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(
+                    opt =>
+                    {
+                        opt.TokenValidationParameters = new TokenValidationParameters
+                        {
+                            ValidateIssuerSigningKey = true,
+                            IssuerSigningKey = key,
+                            ValidateAudience = false,
+                            ValidateIssuer = false,
+
+                        };
+
+                    });
+            //authorization politics
+            //в контроллере API необходимо обьявить политику авторизации [Authorize(Policy = "ValidAccessToken")]
+            services.AddAuthorization(options =>
+                       options.AddPolicy("ValidAccessToken", policy =>
+                       {
+                           policy.AuthenticationSchemes.Add(JwtBearerDefaults.AuthenticationScheme);
+                           policy.RequireAuthenticatedUser();
+                       }));
+
             //-------------------------локалиация---------------------------------------------------------------------------------------------------------------------------
             services.Configure<RequestLocalizationOptions>(options =>
             {
@@ -90,32 +124,7 @@ namespace Authorization.Api
             services.AddTransient<IUserProfileManage, UserProfileManage>(); //управление профилем пользователя
             services.AddScoped<ITokenValidation, TokenValidation>(); //проверка токена
 
-            //----------------------JWT-------------------------------------------------------------------------------------------------------------------------------------
-            services.AddScoped<IJwtGenerator, JwtGenerator>();
-            var tk = Configuration.GetValue(typeof(string), "TokenKey");
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tk.ToString().ToCharArray()));
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(
-                    opt =>
-                    {
-                        opt.TokenValidationParameters = new TokenValidationParameters
-                        {
-                            ValidateIssuerSigningKey = true,
-                            IssuerSigningKey = key,
-                            ValidateAudience = false,
-                            ValidateIssuer = false,
-
-                        };
-
-                    });
-            //authorization politics
-            //в контроллере API необходимо обьявить политику авторизации [Authorize(Policy = "ValidAccessToken")]
-            services.AddAuthorization(options =>
-                       options.AddPolicy("ValidAccessToken", policy =>
-                       {
-                           policy.AuthenticationSchemes.Add(JwtBearerDefaults.AuthenticationScheme);
-                           policy.RequireAuthenticatedUser();
-                       }));
+           
 
             services.AddSwaggerGen(c =>
             {

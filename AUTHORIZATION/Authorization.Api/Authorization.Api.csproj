@@ -27,4 +27,10 @@
     <ProjectReference Include="..\Authorization.Services\Authorization.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Authorization.Api.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

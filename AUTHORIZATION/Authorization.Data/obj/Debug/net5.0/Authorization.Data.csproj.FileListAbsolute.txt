@@ -10,3 +10,4 @@ C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\AUTHORIZATION\Authorization.Data\o
 C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\AUTHORIZATION\Authorization.Data\obj\Debug\net5.0\Authorization.Data.dll
 C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\AUTHORIZATION\Authorization.Data\obj\Debug\net5.0\ref\Authorization.Data.dll
 C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\AUTHORIZATION\Authorization.Data\obj\Debug\net5.0\Authorization.Data.pdb
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\AUTHORIZATION\Authorization.Data\obj\Debug\net5.0\Authorization.Data.csprojAssemblyReference.cache

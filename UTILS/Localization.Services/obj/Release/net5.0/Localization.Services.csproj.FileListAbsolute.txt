@@ -1,0 +1,12 @@
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Localization.Services\bin\Release\net5.0\Localization.Services.deps.json
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Localization.Services\bin\Release\net5.0\Localization.Services.dll
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Localization.Services\bin\Release\net5.0\ref\Localization.Services.dll
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Localization.Services\bin\Release\net5.0\Localization.Services.pdb
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Localization.Services\obj\Release\net5.0\Localization.Services.csprojAssemblyReference.cache
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Localization.Services\obj\Release\net5.0\Localization.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Localization.Services\obj\Release\net5.0\Localization.Services.AssemblyInfoInputs.cache
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Localization.Services\obj\Release\net5.0\Localization.Services.AssemblyInfo.cs
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Localization.Services\obj\Release\net5.0\Localization.Services.csproj.CoreCompileInputs.cache
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Localization.Services\obj\Release\net5.0\Localization.Services.dll
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Localization.Services\obj\Release\net5.0\ref\Localization.Services.dll
+C:\Users\Andrew\Documents\JOB\UNIVERCITY-CORE\UTILS\Localization.Services\obj\Release\net5.0\Localization.Services.pdb

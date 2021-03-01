@@ -100,6 +100,21 @@
             <param name="restore"></param>
             <returns></returns>
         </member>
+        <member name="T:Authorization.Services.Models.JWTSettings">
+            <summary>
+            Настройки токенов из appsettings.json.
+            </summary>
+        </member>
+        <member name="P:Authorization.Services.Models.JWTSettings.TokenKey">
+            <summary>
+            Ключ токена.
+            </summary>
+        </member>
+        <member name="P:Authorization.Services.Models.JWTSettings.JWTLifeDays">
+            <summary>
+            Время жизни токена в днях.
+            </summary>
+        </member>
         <member name="T:Authorization.Services.Models.ViewModels.UserInfoResponse">
             <summary>
             Модель информации о пользователе

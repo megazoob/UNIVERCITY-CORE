@@ -10,6 +10,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using Authorization.Services.Models;
 
 namespace Authorization.Services.Services
 {
@@ -18,10 +19,10 @@ namespace Authorization.Services.Services
         private readonly SymmetricSecurityKey _key;
         private readonly int _tokenLifetimeDays;
 
-        public JwtGenerator(IConfiguration config)
+        public JwtGenerator(JWTSettings config)
         {
-            _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["TokenKey"]));
-            _tokenLifetimeDays = Convert.ToInt32(config["JWTLifeDays"]);
+            _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.TokenKey));
+            _tokenLifetimeDays = Convert.ToInt32(config.JWTLifeDays);
         }
 
         public async Task<string> CreateToken(User user, UserManager<User> userManager, string sid)

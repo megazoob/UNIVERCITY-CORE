@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Localization.Services/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Localization.Abstractions": "5.0.3"
+        },
+        "runtime": {
+          "Localization.Services.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Localization.Abstractions/5.0.3": {
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.321.7303"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Localization.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.Localization.Abstractions/5.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hPdTopuL0LeisoVDH8Hpf3qKX2TMTsC4WfxTAUANQcpFZZJoEw2Fh/HWQoKUqi7TVkpcRKg0e7/hMzwCgo1p5A==",
+      "path": "microsoft.extensions.localization.abstractions/5.0.3",
+      "hashPath": "microsoft.extensions.localization.abstractions.5.0.3.nupkg.sha512"
+    }
+  }
+}
