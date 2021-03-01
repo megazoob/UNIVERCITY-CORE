@@ -114,3 +114,6 @@ public async Task<IList<Department>> GetDepartmentsList()
 
 Библиотеки.
 
+## UNIVERCITY-CORE.RAR ##
+
+Все решение в виде проекта VS20019.
